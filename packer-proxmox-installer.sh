@@ -9,7 +9,7 @@ cd /opt || exit 1
 if [[ ! -f /usr/local/bin/packer ]]; then
     wget https://releases.hashicorp.com/packer/1.6.0/packer_1.6.0_linux_amd64.zip
     unzip packer_1.6.0_linux_amd64.zip -d /usr/local/bin
-    # terraform version
+    packer version
 fi
 
 # git clone https://github.com/Telmate/terraform-provider-proxmox.git
