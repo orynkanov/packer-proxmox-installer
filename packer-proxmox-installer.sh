@@ -5,8 +5,8 @@ dnf install -y wget unzip
 cd /opt || exit 1
 
 if [[ ! -f /usr/local/bin/packer ]]; then
-    wget https://releases.hashicorp.com/packer/1.6.0/packer_1.6.0_linux_amd64.zip
-    unzip packer_1.6.0_linux_amd64.zip -d /usr/local/bin
+    wget https://releases.hashicorp.com/packer/1.6.2/packer_1.6.2_linux_amd64.zip
+    unzip packer_1.6.2_linux_amd64.zip -d /usr/local/bin
     packer version
 fi
 
