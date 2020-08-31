@@ -6,9 +6,9 @@ if [[ ! -f /etc/centos-release ]]; then
 fi
 OSVER=$(grep -o '[0-9]' /etc/centos-release | head -n1)
 if [[ $OSVER -eq 7 ]]; then
-    dnf install -y wget unzip
-elif [[ $OSVER -eq 8 ]]; then
     yum install -y wget unzip
+elif [[ $OSVER -eq 8 ]]; then
+    dnf install -y wget unzip
 fi
 
 cd /opt || exit 1
